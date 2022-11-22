@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  justify-content: center;
+  min-height: 100vh;
+  background: #090b1a;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1.25rem;
+}
+
+.display-desktop {
+  display: none;
+}
+
+.display-mobile {
+  display: block;
+}
+
+.mb-h1 {
+  margin-bottom: 1rem;
+}
+
+.mb-p {
+  margin-bottom: 2.5rem;
+}
+
+.mb-stats {
+  margin-bottom: 1.875rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.card {
+  background: #1b1938;
+  flex-direction: column;
+  max-width: 327px;
+  border-radius: 10px;
+}
+.card .hero {
+  max-height: 240px;
+  background: #aa5cdb;
+  border-radius: 10px 10px 0px 0px;
+}
+.card .hero img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 70%;
+}
+.card .info {
+  padding: 2.5rem 1.875rem;
+  transition: 0.3s ease-in-out;
+}
+.card .info h1 span {
+  color: #aa5cdb;
+}
+.card .info .stats {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    flex-direction: row-reverse;
+    min-width: 1110px;
+    min-height: 446px;
+  }
+  .card .hero {
+    border-radius: 0 10px 10px 0px;
+    max-height: none;
+  }
+  .card .info {
+    max-width: 570px;
+    min-height: 446px;
+    padding: 4.375rem 7.5rem 3.75rem 4.375rem;
+  }
+  .card .info h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .card .info .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mb-stats {
+    margin-bottom: 0;
+  }
+  .text-center {
+    text-align: left;
+  }
+  .display-desktop {
+    display: block;
+  }
+  .display-mobile {
+    display: none;
+  }
+  .mb-h1 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-p {
+    margin-bottom: 4.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
